@@ -79,7 +79,7 @@ function createTrafficAdviceResponse() {
             'content-type': {value: 'application/trafficadvice+json'},
             'permissions-policy': {value: 'browsing-topics=(), prefetch=()'},
             'cache-control': {value: 'max-age=63072000'},
-            'Traffic-Advice': {value: '1.0'}
+            'traffic-advice': {value: '1.0'}
         },
         body: '[{ "user_agent": "prefetch-proxy", "google_prefetch_proxy_eap": { "fraction": 1.0 } },{ "user_agent": "*", "accept": { "purpose": { "prefetch": true, "prerender": true },"sec-purpose": { "prefetch": true, "prerender": true }} }]'
     };

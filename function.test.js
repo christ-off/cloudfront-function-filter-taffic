@@ -55,7 +55,7 @@ describe("/.well-known/traffic-advice", () => {
 
   it("sets a Traffic-Advice: 1.0 header", () => {
     const result = handler(makeEvent({ uri: "/.well-known/traffic-advice" }));
-    expect(result.headers["Traffic-Advice"].value).toBe("1.0");
+    expect(result.headers["traffic-advice"].value).toBe("1.0");
   });
 
   it("response body is valid JSON containing prefetch-proxy entry", () => {
