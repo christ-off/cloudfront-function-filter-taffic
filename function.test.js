@@ -181,6 +181,7 @@ describe("scrapper bot blocking by user-agent", () => {
     ["Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12.388 Version/12.18", "Opera legacy (Presto)"],
     ["WebScraperBot/0.1 (domain-check)", "WebScraperBot domain-check"],
     ["pimeyes-downloader-api/0.1", "PiMeyes downloader API"],
+    ["SleepBot/1.0 (http://sleepbot.com/)", "SleepBot scraper"],
   ];
 
   it.each(blockedAgents)("blocks '%s' (%s)", (userAgent) => {
